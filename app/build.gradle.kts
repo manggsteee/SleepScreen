@@ -58,5 +58,7 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 // https://mvnrepository.com/artifact/androidx.lifecycle/lifecycle-viewmodel-compose
     implementation(libs.androidx.lifecycle.viewmodel.compose)
+// https://mvnrepository.com/artifact/androidx.navigation/navigation-compose
+    implementation(libs.androidx.navigation.compose)
 
 }

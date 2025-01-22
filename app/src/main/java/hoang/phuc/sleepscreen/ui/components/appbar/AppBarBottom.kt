@@ -7,11 +7,13 @@ import androidx.compose.ui.graphics.Color
 import hoang.phuc.sleepscreen.ui.components.button.SaveButton
 
 @Composable
-fun AppBarBottom(modifier: Modifier = Modifier) {
+fun AppBarBottom(
+    onClick: () -> Unit,
+    modifier: Modifier = Modifier) {
     BottomAppBar(
         containerColor = Color.White,
         modifier = modifier
     ){
-        SaveButton(onClick = {})
+        SaveButton(onClick = onClick)
     }
 }

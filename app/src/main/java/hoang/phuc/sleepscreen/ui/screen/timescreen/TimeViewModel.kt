@@ -1,4 +1,4 @@
-package hoang.phuc.sleepscreen.ui.screen
+package hoang.phuc.sleepscreen.ui.screen.timescreen
 
 import androidx.lifecycle.ViewModel
 import hoang.phuc.sleepscreen.data.TimeContents

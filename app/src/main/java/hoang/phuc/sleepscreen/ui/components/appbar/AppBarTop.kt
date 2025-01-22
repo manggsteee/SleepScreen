@@ -19,11 +19,14 @@ import androidx.compose.ui.unit.sp
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun AppBarTop(modifier: Modifier = Modifier) {
+fun AppBarTop(
+    text: String,
+    onClick: () -> Unit,
+    modifier: Modifier = Modifier) {
     TopAppBar(
         title = {
             Text(
-                text = "Giờ đi ngủ cuối tuần",
+                text = text,
                 style = MaterialTheme.typography.titleMedium.copy(fontSize = 18.sp),
                 fontWeight = FontWeight.SemiBold,
                 color = Color(0xF75D5C5D),
@@ -36,7 +39,7 @@ fun AppBarTop(modifier: Modifier = Modifier) {
         ),
         modifier = modifier,
         navigationIcon = {
-            IconButton(onClick = {}) {
+            IconButton(onClick = onClick) {
                 Icon(
                     imageVector = Icons.AutoMirrored.Filled.KeyboardArrowLeft,
                     contentDescription = "Back"
